@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Project Part 1 (revision)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="heading" id="title">
+            here is first revised version of coding in dom manipulation
+        </h1>
+    </div>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown-toggle">
+            <a href="#">Services</a>
+            <ul class="dropdown">
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Graphic Design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">SEO</a></li>
+            </ul>
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div onclick="event.stopPropagation()">
+        <div class="dropdown">
+            <!-- Dropdown menu content goes here -->
+        </div>
+    </div>
+    <label for="toggleButton">Select a Fruit:</label>
+    <button id="toggleButton">Toggle Dropdown</button>
+    <select id="menu" name="fruit">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+        <option value="orange">Orange</option>
+        <option value="strawberry">Strawberry</option>
+    </select>
+
+    <!-- crousal start from here  -->
+
+    <div class="carousel-container">
+        <div class="carousel-item active">
+            <h2><span class="qu">Question 1:</span>
+                How do I make a cup of tea?
+            </h2>
+            <p>Answer:
+                To make a cup of tea, boil water, add a tea bag or tea leaves to a cup, pour the hot water over them,
+                steep for a few minutes, remove the tea bag or strain the leaves, and add sugar or milk as desired.</p>
+        </div>
+        <div class="carousel-item">
+            <h2><span class="qu">Question 2:</span>
+                What is the national flower of Japan? </h2>
+            <p>Answer:
+                The national flower of Japan is the cherry blossom, also known as Sakura.</p>
+        </div>
+        <div class="carousel-item">
+            <h2><span class="qu">Question 3:</span>
+                What is the capital of France?</h2>
+            <p>The capital of France is Paris.</p>
+        </div>
+        <div class="carousel-item">
+            <h2><span class="qu">Question 4:</span>
+                How many continents are there on Earth?</h2>
+            <p>There are seven continents on Earth: Asia, Africa, North America, South America, Antarctica, Europe, and
+                Australia.</p>
+        </div>
+        <div class="carousel-item">
+            <h2><span class="qu">Question 5:</span>
+                What is the largest planet in our solar system?</h2>
+            <p>The largest planet in our solar system is Jupiter.</p>
+        </div>
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+
+
+
+    <br>
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-question" onclick="toggleFAQ(1)">Q1: What is HTML?</div>
+    <div class="faq-answer" id="faq1">HTML stands for HyperText Markup Language. It is the standard markup language for
+        creating web pages and web applications.</div>
+
+    <div class="faq-question" onclick="toggleFAQ(2)">Q2: What is CSS?</div>
+    <div class="faq-answer" id="faq2">CSS stands for Cascading Style Sheets. It is used for describing the presentation
+        and layout of web pages written in HTML.</div>
+
+    <div class="faq-question" onclick="toggleFAQ(3)">Q3: What is JavaScript?</div>
+    <div class="faq-answer" id="faq3">JavaScript is a programming language that enables interactive web pages. It is
+        often used for adding functionality and interactivity to websites.</div>
+
+    <div class="faq-question" onclick="toggleFAQ(4)">Q4: How do I learn web development?</div>
+    <div class="faq-answer" id="faq4">To learn web development, you can start with online tutorials and courses.
+        Familiarize yourself with HTML, CSS, and JavaScript. Practice by building small projects.</div>
+
+    <div class="faq-question" onclick="toggleFAQ(5)">Q5: What tools do I need for web development?</div>
+    <div class="faq-answer" id="faq5">For web development, you'll need a code editor (e.g., Visual Studio Code), a web
+        browser (e.g., Chrome), and a version control system (e.g., Git).</div>
+
+        <hr>
+        <button id="openModalButton">Open Full-Screen Modal</button>
+
+        <!-- Modal Overlay -->
+        <div id="modalOverlay" class="modal-overlay">
+            <div class="modal">
+                <span class="cancel-button" id="closeModalButton">&#10006;</span>
+                <h2>Congratulations!</h2>
+                <p>You've achieved something great.</p>
+                <button class="fullscreen-button" id="fullscreenButton">Full Screen</button>
+            </div>
+        </div>
+           <!-- Skeleton Modal -->
+    <div id="skeletonModal" class="skeleton-modal">
+        <div class="loading-spinner"></div>
+    </div>
+    <br><br>
+
+    <!-- rating bar section  -->
+
+    <div class="rating-container">
+        <div class="star" data-rating="1">1</div>
+        <div class="star" data-rating="2">2</div>
+        <div class="star" data-rating="3">3</div>
+        <div class="star" data-rating="4">4</div>
+        <div class="star" data-rating="5">5</div>
+    </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+  
+
+    <script src="./Dom.js">
+
+    </script>
+</body>
+
+</html>

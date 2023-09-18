@@ -1,0 +1,234 @@
+
+    body {
+        background:rgb(170, 137, 137);
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.nav {
+        list-style-type: none;
+        padding: 0;
+        background-color: #333;
+    }
+
+    ul.nav li {
+        display: inline-block;
+        position: relative;
+    }
+
+    ul.nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    ul.nav li:hover ul.dropdown,
+    ul.dropdown li:hover ul.sub-dropdown {
+        display: block;
+    }
+
+    /* Style the dropdown menu */
+    ul.dropdown,
+    ul.sub-dropdown {
+        list-style-type: none;
+        display: none;
+        position: absolute;
+        background-color: #444;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    ul.dropdown li,
+    ul.sub-dropdown li {
+        display: block;
+    }
+
+    ul.dropdown li a,
+    ul.sub-dropdown li a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Style for the active menu item */
+    ul.nav li.active a {
+        background-color: #555;
+    }
+
+    /* Style for the active dropdown item */
+    ul.dropdown li.active a {
+        background-color: #666;
+    }
+
+
+    /* dropdown menu css */
+    #menu {
+        display: none;
+        background-color: #000;
+        color: white;
+
+    }
+
+    /* crosalcss */
+    .carousel-container {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        border: 2px solid white;
+    }
+
+    .carousel-item {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .qu {
+        font-size: small;
+    }
+
+    /* FAQs css */
+    .faq-question {
+        cursor: pointer;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .faq-answer {
+        display: none;
+    }
+
+
+    /* Style for the modal overlay */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+
+        transition: opacity 3s ease-in-out;
+    }
+
+         /* Style for the modal content */
+        /* Style for the modal overlay */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8); /* Light white background with transparency */
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            color: #000;
+        }
+
+        /* Style for the modal content */
+        .modal {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+        }
+       /* Style for the cancel button */
+        .cancel-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #000;
+        }
+ /* Style for the full-screen button */
+ .fullscreen-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Style for the modal overlay */
+.skeleton-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+   /* Style for the loading spinner */
+   .loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Lighter border color */
+    border-top: 4px solid #3498db; /* Loading spinner color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+   /* Keyframes for the loading spinner animation */
+   @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+ /* Style for the rating container */
+ .rating-container {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Style for the stars */
+.star {
+    display: inline-block;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    background: url('') no-repeat;
+    background-size: contain;
+    color: rebeccapurple;
+    text-align: center;
+}
+
+ /* Style for the progress bar */
+ .progress-bar-container {
+    width: 100px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+.abc{
+    background: yellow;
+    border: 2px solid green;
+}
